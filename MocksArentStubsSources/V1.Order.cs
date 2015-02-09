@@ -17,6 +17,8 @@ namespace MocksArentStubs.V1
 
         public void Fill(IWarehouse warehouse)
         {
+            warehouse.HasInventory(product, amount);
+
             if (!warehouse.HasInventory(product, amount))
                 return;
 
